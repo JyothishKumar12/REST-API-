@@ -20,5 +20,9 @@ from apps import views
 urlpatterns = [
     path('',views.apioverview),
     path('task-list',views.tasklist),
-    path('task-detail/<str:pk>/',views.taskDetail, name='task-detail')
+    path('task-detail/<str:pk>/',views.taskDetail, name='task-detail'),
+    path('task-post',views.taskPost),
+    path('task-update/<str:pk>/',views.taskUpdate, name='task-update'),
+    path('task-delete/<str:pk>/',views.taskDelete, name= 'task-delete')
+    
 ]
