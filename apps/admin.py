@@ -7,4 +7,4 @@ from .models import Task
 
 
 class TaskAdmin(admin.ModelAdmin):
-    fields = ['id','task','completed']
+    fields = ['title','completed']
